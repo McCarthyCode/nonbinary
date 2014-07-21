@@ -11,8 +11,8 @@ To compile:
 ```sh
 $ make
 mkdir bin
-g++ -Wall -O3 -c src/main.cpp -o bin/main.o
-g++ -Wall -O3 bin/main.o -o convert_to_binary
+g++ -std=c++11 -Wall -O3 -c src/main.cpp -o bin/main.o
+g++ -std=c++11 -Wall -O3 bin/main.o -o convert_to_binary
 ```
 
 To run:
@@ -20,9 +20,9 @@ To run:
 
 ```sh
 $ make run
-echo "nonbinary" | ./convert_to_binary
+echo "non-binary" | ./convert_to_binary
 01101110 01101111 01101110
-01100010 01101001 01101110
-01100001 01110010 01111001
+00101101 01100010 01101001
+01101110 01100001 01110010
 01111001 
 ```
