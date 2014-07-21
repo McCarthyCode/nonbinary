@@ -1,0 +1,5 @@
+bin
+bin/*.o
+convert_to_binary
+convert_to_binary.*
+*.exe
