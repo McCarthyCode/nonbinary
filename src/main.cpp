@@ -5,11 +5,11 @@
 using namespace std;
 
 int main () {
-	int i = 0;
-	char c;
+	string str;
+	cin >> str;
 	
-	while (cin) {
-		cin >> c;
+	int i = 0;
+	for (char c : str) {
 		bitset<8> bin (c);
 		cout << bin << ((++i % 3) ? ' ' : '\n');
 	}

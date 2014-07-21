@@ -1,5 +1,5 @@
 CXX=g++
-CXXFLAGS=-Wall -O3 
+CXXFLAGS=-std=c++11 -Wall -O3 
 CXXSOURCE=src/main.cpp
 CXXIN=bin/main.o
 CXXOUT=convert_to_binary
@@ -8,7 +8,7 @@ RM=rm -Rf
 all: $(CXXOUT)
 
 run: $(CXXOUT)
-	echo "nonbinary" | ./$<
+	echo "non-binary" | ./$<
 
 $(CXXOUT): $(CXXIN)
 	$(CXX) $(CXXFLAGS)$^ -o $@
